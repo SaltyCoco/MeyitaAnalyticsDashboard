@@ -2,7 +2,7 @@
 static/
 templates/
 venv/include/
-queries/pg_config.ini
+data/queries/pg_config.ini
 .DS_Store
 *.pyc
 .env
