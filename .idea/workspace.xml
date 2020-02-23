@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63af1507-08f5-416e-a2f0-1f9829c90671" name="Default Changelist" comment="" />
+    <list default="true" id="63af1507-08f5-416e-a2f0-1f9829c90671" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visuals/main/mainDataFeeder.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visuals/pharma_in_rev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visuals/net_income_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/visuals/net_income_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visuals/pct_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/visuals/pct_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visuals/revenue_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/visuals/revenue_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visuals/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/visuals/scratch.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +22,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YBGAfrJwINw7O1NX3wNNNm6aeR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,10 +38,42 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/visuals" />
     <property name="settings.editor.selected.configurable" value="aws" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visuals" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visuals" />
+    </key>
+  </component>
   <component name="RunManager" selected="Flask server.MeyitaAnalyticsDashboards">
+    <configuration name="visuals.pharma_in_rev.py" type="PythonConfigurationType" factoryName="Python">
+      <module name="MeyitaAnalyticsDashboards" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visuals" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visuals/pharma_in_rev.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="visuals/scratch.py" type="PythonConfigurationType" factoryName="Python">
       <module name="MeyitaAnalyticsDashboards" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,7 +103,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -66,6 +114,7 @@
     <list>
       <item itemvalue="Flask server.MeyitaAnalyticsDashboards" />
       <item itemvalue="Python.visuals/scratch.py" />
+      <item itemvalue="Python.visuals.pharma_in_rev.py" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -90,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582408431832</updated>
-      <workItem from="1582408444097" duration="3689000" />
+      <workItem from="1582408444097" duration="23136000" />
     </task>
     <servers />
   </component>
@@ -98,33 +147,47 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582409040625">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="369" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582424620904">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
+    <state x="369" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582424620904" />
     <state x="360" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582409040625" />
-    <state width="1046" height="210" key="GridCell.Tab.0.bottom" timestamp="1582416921706">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="374" key="GridCell.Tab.0.bottom" timestamp="1582441969547">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1046" height="210" key="GridCell.Tab.0.bottom/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582416921706" />
-    <state width="1046" height="210" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582409229719" />
-    <state width="1046" height="210" key="GridCell.Tab.0.center" timestamp="1582416921705">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="374" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582441969547" />
+    <state width="1398" height="374" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1582440448573" />
+    <state width="1046" height="349" key="GridCell.Tab.0.bottom/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
+    <state width="1046" height="349" key="GridCell.Tab.0.bottom/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622343" />
+    <state width="1046" height="349" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019560" />
+    <state width="1398" height="374" key="GridCell.Tab.0.center" timestamp="1582441969546">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1046" height="210" key="GridCell.Tab.0.center/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582416921705" />
-    <state width="1046" height="210" key="GridCell.Tab.0.center/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582409229718" />
-    <state width="1046" height="210" key="GridCell.Tab.0.left" timestamp="1582416921705">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="374" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582441969546" />
+    <state width="1398" height="374" key="GridCell.Tab.0.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1582440448571" />
+    <state width="1046" height="349" key="GridCell.Tab.0.center/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
+    <state width="1046" height="349" key="GridCell.Tab.0.center/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622341" />
+    <state width="1046" height="349" key="GridCell.Tab.0.center/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019560" />
+    <state width="1398" height="374" key="GridCell.Tab.0.left" timestamp="1582441969545">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1046" height="210" key="GridCell.Tab.0.left/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582416921705" />
-    <state width="1046" height="210" key="GridCell.Tab.0.left/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582409229718" />
-    <state width="1046" height="210" key="GridCell.Tab.0.right" timestamp="1582416921706">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="374" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582441969545" />
+    <state width="1398" height="374" key="GridCell.Tab.0.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1582440448569" />
+    <state width="1046" height="349" key="GridCell.Tab.0.left/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138756" />
+    <state width="1046" height="349" key="GridCell.Tab.0.left/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622340" />
+    <state width="1046" height="349" key="GridCell.Tab.0.left/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019559" />
+    <state width="1398" height="374" key="GridCell.Tab.0.right" timestamp="1582441969546">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1046" height="210" key="GridCell.Tab.0.right/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582416921706" />
-    <state width="1046" height="210" key="GridCell.Tab.0.right/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582409229719" />
+    <state width="1398" height="374" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582441969546" />
+    <state width="1398" height="374" key="GridCell.Tab.0.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1582440448572" />
+    <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
+    <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622342" />
+    <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019560" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$MeyitaAnalyticsDashboards.coverage" NAME="MeyitaAnalyticsDashboards Coverage Results" MODIFIED="1582416921691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_scratch_py.coverage" NAME="visuals/scratch.py Coverage Results" MODIFIED="1582409043708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
+    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_pharma_in_rev_py.coverage" NAME="visuals.pharma_in_rev.py Coverage Results" MODIFIED="1582425030150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
+    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$MeyitaAnalyticsDashboards.coverage" NAME="MeyitaAnalyticsDashboards Coverage Results" MODIFIED="1582441969534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_scratch_py.coverage" NAME="visuals/scratch.py Coverage Results" MODIFIED="1582424517819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
   </component>
 </project>

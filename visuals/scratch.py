@@ -1,9 +1,12 @@
 # visuals/scratch.py
 
+import os
 import pandas as pd
 import plotly.offline as plo
 import plotly.graph_objects as go
 
+base_dir = os.path.split(os.path.dirname(__file__))[-2]
+dataMain = os.path.join(base_dir, "/data/main/mainDataFeeder.csv")
 df = pd.read_csv("../data/main/mainDataFeeder.csv")
 
 #print(df.head())
