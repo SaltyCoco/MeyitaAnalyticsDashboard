@@ -775,7 +775,10 @@ def pharma_approve_of_ceo():
         title="Average Employee Approval Rating of Company CEO",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="% Approval")
+        yaxis=dict(
+            title="% Approval",
+            range=[0,100]
+        )
     )
     cr_data = [jnj_cr_trace, pfe_cr_trace, abbv_cr_trace, bmy_cr_trace, tmo_cr_trace, amgn_cr_trace, gild_cr_trace]
     cr_fig = go.Figure(data=cr_data, layout=cr_layout)
@@ -923,7 +926,10 @@ def pharma_work_life():
         title="Likeliness to Recommed Company to a Friend",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="Out of 5 Employee Score")
+        yaxis=dict(
+            title="Out of 5 Employee Score",
+            range=[0,5]
+        )
     )
     work_life_data = [jnj_work_life_trace, pfe_work_life_trace, abbv_work_life_trace, bmy_work_life_trace, tmo_work_life_trace, amgn_work_life_trace, gild_work_life_trace]
     work_life_fig = go.Figure(data=work_life_data, layout=work_life_layout)
@@ -997,7 +1003,10 @@ def pharma_job_sec_adv():
         title="Work Life Balance",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="Out of 5 Employee Score")
+        yaxis=dict(
+            title="Out of 5 Employee Score",
+            range=[0,5]
+        )
     )
     job_sec_adv_data = [jnj_job_sec_adv_trace, pfe_job_sec_adv_trace, abbv_job_sec_adv_trace, bmy_job_sec_adv_trace, tmo_job_sec_adv_trace, amgn_job_sec_adv_trace, gild_job_sec_adv_trace]
     job_sec_adv_fig = go.Figure(data=job_sec_adv_data, layout=job_sec_adv_layout)
@@ -1071,7 +1080,10 @@ def pharma_mgnt():
         title="Employee Management Satisfaction",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="Employee Score Out of 5")
+        yaxis=dict(
+            title="Employee Score Out of 5",
+            range=[0,5]
+        )
     )
     mgnt_data = [jnj_mgnt_trace, pfe_mgnt_trace, abbv_mgnt_trace, bmy_mgnt_trace, tmo_mgnt_trace, amgn_mgnt_trace, gild_mgnt_trace]
     mgnt_fig = go.Figure(data=mgnt_data, layout=mgnt_layout)
@@ -1145,7 +1157,10 @@ def pharma_culture():
         title="Employee Management Satisfaction",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="Employee Score Out of 5")
+        yaxis=dict(
+            title="Employee Score Out of 5",
+            range=[0,5]
+        )
     )
     ind_culture_data = [jnj_ind_culture_trace, pfe_ind_culture_trace, abbv_ind_culture_trace, bmy_ind_culture_trace, tmo_ind_culture_trace, amgn_ind_culture_trace, gild_ind_culture_trace]
     ind_culture_fig = go.Figure(data=ind_culture_data, layout=ind_culture_layout)
@@ -1219,7 +1234,10 @@ def pharma_salary_sat():
         title="Employee Salary Satisfaction",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="Employee Score Out of 5")
+        yaxis=dict(
+            title="Employee Score Out of 5",
+            range=[0,5]
+        )
     )
     ind_salary_sat_data = [jnj_ind_salary_sat_trace, pfe_ind_salary_sat_trace, abbv_ind_salary_sat_trace, bmy_ind_salary_sat_trace, tmo_ind_salary_sat_trace, amgn_ind_salary_sat_trace, gild_ind_salary_sat_trace]
     ind_salary_sat_fig = go.Figure(data=ind_salary_sat_data, layout=ind_salary_sat_layout)
@@ -1267,7 +1285,7 @@ net_income_parma_content = [
     dbc.CardFooter(
         html.P(
             "Net Income is revenue less all costs of manufacturing, sales, pay roll and taxes. This shows how much the "
-            "comapny is really profiting.  For example, if a company sells 1 billion dollars worth of product but has costs "
+            "company is really profiting.  For example, if a company sells 1 billion dollars worth of product but has costs "
             "totaling 1.5 billion dollars the company operated at a huge loss. The blue line at the top shows what "
             "party the president of the time is a member of.",
             className="card-text",
@@ -1507,7 +1525,6 @@ pharma_row_3 = html.Div([
     dbc.Row([
         dbc.Col(ceo_rating_parma_card),
         dbc.Col(benefits_pay_pharma_card),
-        dbc.Col(work_life_pharma_card)
     ])
 ])
 
@@ -1516,6 +1533,12 @@ pharma_row_4 = html.Div([
         dbc.Col(job_sec_adv_pharma_card),
         dbc.Col(mgnt_pharma_card),
         dbc.Col(culture_pharma_card),
+    ])
+])
+
+pharma_row_5 = html.Div([
+    dbc.Row([
+        dbc.Col(work_life_pharma_card),
         dbc.Col(salary_sat_pharma_card)
     ])
 ])
@@ -1531,14 +1554,14 @@ jumbotron_big_pharma = dbc.Jumbotron(
                 html.P(
                     "The purpose for this is wedsite to provide information so people can form their own opinion on popular topics."
                     "The site makes no assumptions or conclusions.  Rather, it consolidates data from multiple sources and "
-                    "displays it in easy to analyze visuals.  This complete project with all data is availble on github at "
+                    "displays it in easy to analyze visuals.  This complete project with all data is available on github at "
                     "https://github.com/SaltyCoco/MeyitaAnalyticsDashboard",
                     className="lead",
                 ),
                 html.Hr(className="my-2"),
                 html.P(
-                    "This dashboard dispays metrics for pharmasutical organizations which are incorporated within the United States. "
-                    "The main metrics look at revenue, net income and employee ratings.",
+                    "This dashboard displays metrics for pharmaceutical organizations which are incorporated within the United States. "
+                    "The main metrics look at revenue, net income and employee ratings.  Each Company is identified by its stock symbol. ",
                     className="lead",
                 ),
             ],
@@ -1566,6 +1589,14 @@ app.layout = html.Div(children=[
     html.Br(),
     html.Br(),
     pharma_row_4,
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    pharma_row_5,
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.H4("This website was developed by and owned by Ryan Schulte"),
     html.Br(),
     html.Br(),
     html.Br(),
