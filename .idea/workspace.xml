@@ -211,11 +211,12 @@
     <state width="759" height="322" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1582485869171" />
     <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622342" />
     <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019560" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582488989871">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582489113555">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582487530561" />
     <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1582442869538" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1582489113555" />
     <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1582488989871" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

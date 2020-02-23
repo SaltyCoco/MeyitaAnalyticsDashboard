@@ -1,7 +1,0 @@
-[rds_db]
-engine=django.db.backends.postgresql
-dbname=hcanalysisdb
-username=postgres
-password=Bryan1940?
-host=hcanalysisdb.cncxzdxrsbwl.us-west-1.rds.amazonaws.com
-port=5432
