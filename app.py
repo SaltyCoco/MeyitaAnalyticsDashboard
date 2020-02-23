@@ -852,7 +852,10 @@ def pharma_benefits_pay():
         title="Average Employee Satisfaction for Pay & Benefits",
         template="plotly_dark",
         xaxis=dict(title="Company"),
-        yaxis=dict(title="% Approval")
+        yaxis=dict(
+            title="% Approval",
+            range=[0,5]
+        )
     )
     pb_data = [jnj_pb_trace, pfe_pb_trace, abbv_pb_trace, bmy_pb_trace, tmo_pb_trace, amgn_pb_trace, gild_pb_trace]
     pb_fig = go.Figure(data=pb_data, layout=pb_layout)
@@ -1235,8 +1238,8 @@ def pharma_salary_sat():
         template="plotly_dark",
         xaxis=dict(title="Company"),
         yaxis=dict(
-            title="Employee Score Out of 5",
-            range=[0,5]
+            title="% Approval",
+            range=[0,100]
         )
     )
     ind_salary_sat_data = [jnj_ind_salary_sat_trace, pfe_ind_salary_sat_trace, abbv_ind_salary_sat_trace, bmy_ind_salary_sat_trace, tmo_ind_salary_sat_trace, amgn_ind_salary_sat_trace, gild_ind_salary_sat_trace]
