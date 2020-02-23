@@ -1555,7 +1555,8 @@ jumbotron_big_pharma = dbc.Jumbotron(
                     "The purpose for this is wedsite to provide information so people can form their own opinion on popular topics."
                     "The site makes no assumptions or conclusions.  Rather, it consolidates data from multiple sources and "
                     "displays it in easy to analyze visuals.  This complete project with all data is available on github at "
-                    "https://github.com/SaltyCoco/MeyitaAnalyticsDashboard",
+                    "https://github.com/SaltyCoco/MeyitaAnalyticsDashboard . If there are any issues with the site please log "
+                    "it within github, contact me via social media or email me at ryan.j.schulte@gmail.com",
                     className="lead",
                 ),
                 html.Hr(className="my-2"),
