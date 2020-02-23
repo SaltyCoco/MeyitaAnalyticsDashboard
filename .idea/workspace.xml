@@ -4,7 +4,6 @@
     <list default="true" id="63af1507-08f5-416e-a2f0-1f9829c90671" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/references.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/references.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582408431832</updated>
       <workItem from="1582408444097" duration="24665000" />
-      <workItem from="1582485485117" duration="2754000" />
+      <workItem from="1582485485117" duration="2851000" />
     </task>
     <servers />
   </component>
@@ -212,11 +211,12 @@
     <state width="759" height="322" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1582485869171" />
     <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1582423622342" />
     <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1582423019560" />
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1582487530561">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582488989871">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582487530561" />
     <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1582442869538" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1582488989871" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_pharma_in_rev_py.coverage" NAME="visuals.pharma_in_rev.py Coverage Results" MODIFIED="1582425030150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
