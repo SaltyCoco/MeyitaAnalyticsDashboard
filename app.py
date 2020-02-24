@@ -7,6 +7,7 @@ import dash
 import dash_core_components as dcc
 import dash_bootstrap_components as dbc
 import dash_html_components as html
+from dash.dependencies import Input, Output, State
 import flask
 
 server = flask.Flask(__name__)
@@ -1263,6 +1264,166 @@ navbar = dbc.Navbar(
     dark=True,
 )
 ########################################################################################################################
+# Pharma Modals
+########################################################################################################################
+jnj_pharma_modal = html.Div(
+    [
+        dbc.Button("JNJ", color="info", id="jnj_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Johnson & Johnson"),
+                dbc.ModalBody("Johnson & Johnson is engaged in the research and development, manufacture and sale of a range of products in the healthcare field. "
+                            "The Company operates in three segments: Consumer, Pharmaceutical, and Medical Devices and Diagnostics. Its Consumer"
+                            "segment offers products for use in the baby care, skin care, oral care, wound care, and women's health fields, nutritional"
+                            "and over-the-counter pharmaceutical products. The company's Pharmaceutical segment provides various products in the areas"
+                            "of anti-infective, antipsychotic, contraceptive, dermatology, gastrointestinal, hematology, immunology, neurology, oncology,"
+                            "pain management, thrombosis, vaccines, and infectious diseases. Its Medical Devices and Diagnostics segment offers"
+                            "electrophysiology and circulatory disease management products; orthopaedic joint reconstruction, spinal care, neurological,"
+                            "and sports medicine products; surgical care, aesthetics, and women's health products. Johnson & Johnson is based in New Brunswick, New Jersey."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="jnj_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="jnj_pharma_modal",
+        ),
+    ]
+)
+
+pfe_pharma_modal = html.Div(
+    [
+        dbc.Button("PFE", color="info", id="open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Pfizer Inc"),
+                dbc.ModalBody("Pfizer Inc. is a research-based, global pharmaceutical company that discovers, develops, manufactures, and markets medicines"
+                            "for humans and animals. The Company's diversified global healthcare portfolio includes human and animal biologic and small"
+                            "molecule medicines and vaccines, as well as nutritional products and consumer healthcare products. Pfizer's Animal Health"
+                            "business unit discovers, develops and sells products for the prevention and treatment of diseases in livestock and companion"
+                            "animals. It sells its products to wholesalers, distributors, retailers, hospitals, clinics, government agencies, pharmacies,"
+                            "individual provider offices, veterinarians, livestock producers, and grocery and convenience stores. Pfizer Inc. is headquartered in New York."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="close", className="ml-auto")
+                ),
+            ],
+            id="pfe_pharma_modal",
+        ),
+    ]
+)
+
+abbv_pharma_modal = html.Div(
+    [
+        dbc.Button("ABBV", color="info", id="abbv_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Amgen Inc"),
+                dbc.ModalBody("Amgen Inc. discovers, develops and delivers innovative human therapeutics. A biotechnology pioneer, Amgen was one of the"
+                            "first companies to realize the new science's promise by bringing safe and effective medicines from lab, to manufacturing plant,"
+                            "to patient. Amgen therapeutics have changed the practice of medicine, helping millions of people around the world in the fight"
+                            "against cancer, kidney disease, rheumatoid arthritis, and other serious illnesses. With a deep and broad pipeline of potential"
+                            "new medicines, Amgen remains committed to advancing science to dramatically improve people's lives."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="abbv_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="abbv_pharma_modal",
+        ),
+    ]
+)
+
+gild_pharma_modal = html.Div(
+    [
+        dbc.Button("GILD", color="info", id="gild_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Gilead Sciences, Inc"),
+                dbc.ModalBody("Gilead Sciences, Inc. is a research-based biopharmaceutical company that discovers, develops and commercializes innovative"
+                            "medicines in areas of unmet medical need. The Company strive to transform and simplify care for people with life-threatening"
+                            "illnesses around the world. Gilead's portfolio of products and pipeline of investigational drugs includes treatments for"
+                            "HIV/AIDS, liver diseases, cancer, inflammatory and respiratory diseases, and cardiovascular conditions. Their portfolio"
+                            "of marketed products includes a number of category firsts, including complete treatment regimens for HIV infection available"
+                            "in a once-daily single pill and the first oral antiretroviral pill available to reduce the risk of acquiring HIV infection"
+                            "in certain high-risk adults."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="gild_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="gild_pharma_modal",
+        ),
+    ]
+)
+
+bmy_pharma_modal = html.Div(
+    [
+        dbc.Button("BMY", color="info", id="bmy_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Bristol-Myers Squibb"),
+                dbc.ModalBody("Bristol-Myers Squibb is a differentiated company, led by their unique BioPharma strategy that leverages the reach and"
+                            "resources of a major pharma company paired with the entrepreneurial spirit and agility of a biotech firm. They work every"
+                            "day to deliver innovative medicines for patients with serious and life-threatening diseases. Their employees around the"
+                            "world work together for patients - it drives everything they do. They are focused on helping millions of patients around"
+                            "the world in disease areas such as oncology, cardiovascular, immunoscience and fibrosis. Through their R&D organization,"
+                            "they have built a sustainable pipeline of potential therapies, and actively partner to access external innovation to broaden"
+                            "and accelerate their work."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="bmy_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="bmy_pharma_modal",
+        ),
+    ]
+)
+
+mrk_pharma_modal = html.Div(
+    [
+        dbc.Button("MRK", color="info", id="mrk_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Merik & Company"),
+                dbc.ModalBody("Merck & Co., Inc., a leading global biopharmaceutical company known as MSD outside of the United States and Canada, has"
+                            "been inventing for life, bringing forward medicines and vaccines for many of the world's most challenging diseases. Through"
+                            "their prescription medicines, vaccines, biologic therapies and animal health products, they work with customers and operate"
+                            "the countries to deliver innovative health solutions. The Company also demonstrate their commitment to increasing access to"
+                            "health care through far-reaching policies, programs and partnerships. Merck continues to be at the forefront of research to"
+                            "advance the prevention and treatment of diseases that threaten people and communities around the world - including cancer,"
+                            "cardio-metabolic diseases, emerging animal diseases, Alzheimer's disease and infectious diseases including HIV and Ebola."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="mrk_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="mrk_pharma_modal",
+        ),
+    ]
+)
+
+tmo_pharma_modal = html.Div(
+    [
+        dbc.Button("TMO", color="info", id="tmo_pharma_open"),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Thermo Fisher Scientific Inc"),
+                dbc.ModalBody("Thermo Fisher Scientific Inc. provides analytical instruments, equipment, reagents and consumables, software, and services"
+                            "for research, manufacturing, analysis, discovery, and diagnostics. The Company's four premier brands include Thermo Scientific,"
+                            "Life Technologies, Fisher Scientific and Unity Lab Services. Its portfolio of products includes technologies for mass spectrometry,"
+                            "elemental analysis, molecular spectroscopy, sample preparation, informatics, purity chemistry production, protein analysis,"
+                            "Ribonucleic acid (RNA)-interference techniques, immunodiagnos. Thermo Fisher Scientific Inc. is headquartered in Waltham, Massachusetts."
+                            " This was taken from: https://www.macrotrends.net/"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="tmo_pharma_close", className="ml-auto")
+                ),
+            ],
+            id="tmo_pharma_modal",
+        ),
+    ]
+)
+
+########################################################################################################################
 # big pharma card
 ########################################################################################################################
 rev_parma_content = [
@@ -1273,7 +1434,8 @@ rev_parma_content = [
     dbc.CardFooter(
         html.P(
             "Revenue represents gains from sale of goods before costs such as taxes and pay role.  It shows how much "
-            "a company sells. The blue line at the top shows what party the president of the time is a member of.",
+            "a company sells. The blue line at the top shows what party the president of the time is a member of. "
+            "Data taken from https://www.macrotrends.net/",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1290,7 +1452,7 @@ net_income_parma_content = [
             "Net Income is revenue less all costs of manufacturing, sales, pay roll and taxes. This shows how much the "
             "company is really profiting.  For example, if a company sells 1 billion dollars worth of product but has costs "
             "totaling 1.5 billion dollars the company operated at a huge loss. The blue line at the top shows what "
-            "party the president of the time is a member of.",
+            "party the president of the time is a member of.  Data taken from https://www.macrotrends.net/",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1307,7 +1469,7 @@ profit_parma_content = [
             "This graph shows the percentage of profit to revenue.  In basic terms you would consider this the amount "
             "of one would take home from a paycheck after all deductions. This is an indiction of how much the company "
             "pays in taxes, pays employees, conducts research & development and more. The blue line at the top shows what" 
-            "party the president of the time is a member of.",
+            "party the president of the time is a member of.  Data taken from https://www.macrotrends.net/",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1322,7 +1484,8 @@ diff_in_rev_parma_content = [
     dbc.CardFooter(
         html.P(
             "This graph shows the difference between revenue and net income. This indicates the amount of money the company "
-            "spends to do business. The blue line at the top shows what party the president of the time is a member of.",
+            "spends to do business. The blue line at the top shows what party the president of the time is a member of."
+            "Data taken from https://www.macrotrends.net/.",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1336,7 +1499,8 @@ ceo_rating_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This is the average between employee ratings of the organization's CEO. Scores were taken from indeed and Glassdoor.",
+            "This is the average between employee ratings of the organization's CEO. Scores were taken from indeed and Glassdoor."
+            "Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1350,7 +1514,8 @@ benefits_pay_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This is the average between employee ratings of the organization's pay and benefits. Scores were taken from indeed and Glassdoor.",
+            "This is the average between employee ratings of the organization's pay and benefits. Scores were taken from indeed and Glassdoor."
+            "Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1364,7 +1529,7 @@ work_life_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This score is by employees on the work life balance from the position. ",
+            "This score is by employees on the work life balance from the position. Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1378,7 +1543,8 @@ job_sec_adv_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This score is by employees for how secure they feel in their position and the career advancement opportunities they have. ",
+            "This score is by employees for how secure they feel in their position and the career advancement opportunities"
+            " they have. Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1392,7 +1558,7 @@ mgnt_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This is a score by employees rating their Management at the company.",
+            "This is a score by employees rating their Management at the company. Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1406,7 +1572,7 @@ culture_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This is a score by employees rating regarding the culture at the company.",
+            "This is a score by employees rating regarding the culture at the company. Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1420,7 +1586,7 @@ salary_sat_parma_content = [
     ),
     dbc.CardFooter(
         html.P(
-            "This is a score by employees rating regarding the salary for employees.",
+            "This is a score by employees rating regarding the salary for employees. Data taken from https://www.glassdoor.com and https://www.indeed.com",
             className="card-text",
             style={"color": "white"}
         ),
@@ -1506,10 +1672,23 @@ salary_sat_pharma_card = html.Div([
     )
 ])
 
-
 ########################################################################################################################
 # Pharma Row
 ########################################################################################################################
+pharma_row_0 = html.Div([
+    dbc.Row(html.H4("Select the stock symbol for a description of the company.", style={"color": "white", "margin-left": "2%"})),
+    html.Br(),
+    dbc.Row([
+        dbc.Col(jnj_pharma_modal),
+        dbc.Col(pfe_pharma_modal),
+        dbc.Col(abbv_pharma_modal),
+        dbc.Col(gild_pharma_modal),
+        dbc.Col(bmy_pharma_modal),
+        dbc.Col(mrk_pharma_modal),
+        dbc.Col(tmo_pharma_modal)
+    ])
+], style={"margin-left":"2%", "margin-right":"2%"})
+
 pharma_row_1 = html.Div([
     dbc.Row([
         dbc.Col(rev_parma_card),
@@ -1580,6 +1759,10 @@ jumbotron_big_pharma = dbc.Jumbotron(
 app.layout = html.Div(children=[
     navbar,
     jumbotron_big_pharma,
+    html.Br(),
+    pharma_row_0,
+    html.Br(),
+    html.Br(),
     pharma_row_1,
     html.Br(),
     html.Br(),
@@ -1605,6 +1788,93 @@ app.layout = html.Div(children=[
     html.Br(),
     html.Br(),
 ], style={"background-color": "black"})
+
+########################################################################################################################
+########################################################################################################################
+# Callbacks
+########################################################################################################################
+########################################################################################################################
+
+########################################################################################################################
+# Pharma Modals - Callback
+########################################################################################################################
+# jnj modal callback
+@app.callback(
+    Output("jnj_pharma_modal", "is_open"),
+    [Input("jnj_pharma_open", "n_clicks"), Input("jnj_pharma_close", "n_clicks")],
+    [State("jnj_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# pfe modal callback
+@app.callback(
+    Output("pfe_pharma_modal", "is_open"),
+    [Input("open", "n_clicks"), Input("close", "n_clicks")],
+    [State("pfe_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# abbv modal callback
+@app.callback(
+    Output("abbv_pharma_modal", "is_open"),
+    [Input("abbv_pharma_open", "n_clicks"), Input("abbv_pharma_close", "n_clicks")],
+    [State("abbv_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# gild modal callback
+@app.callback(
+    Output("gild_pharma_modal", "is_open"),
+    [Input("gild_pharma_open", "n_clicks"), Input("gild_pharma_close", "n_clicks")],
+    [State("gild_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# bmy modal callback
+@app.callback(
+    Output("bmy_pharma_modal", "is_open"),
+    [Input("bmy_pharma_open", "n_clicks"), Input("bmy_pharma_close", "n_clicks")],
+    [State("bmy_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# mrk modal callback
+@app.callback(
+    Output("mrk_pharma_modal", "is_open"),
+    [Input("mrk_pharma_open", "n_clicks"), Input("mrk_pharma_close", "n_clicks")],
+    [State("mrk_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
+# tmo modal callback
+@app.callback(
+    Output("tmo_pharma_modal", "is_open"),
+    [Input("tmo_pharma_open", "n_clicks"), Input("tmo_pharma_close", "n_clicks")],
+    [State("tmo_pharma_modal", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+
 ########################################################################################################################
 # Application
 ########################################################################################################################
