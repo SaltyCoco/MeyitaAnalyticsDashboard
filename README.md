@@ -10,7 +10,7 @@
         going to forgo adding my opinion or bias and just present facts.  I am not a democrat or republican and have 
         true disbain for both political parties.  Questions, concerns and comments are always welcome.  All data gathered 
         for this dashboard will be available in it's raw format with references to where I got it from.  Lastly, if
-        anybody has problems with anything presented please email said concern to gofuck@yourself.com
+        anybody has problems with anything presented please email said concern to ryan.j.schulte@gmail.com.
     </p>
     
 <h3>Web Application</h3>
