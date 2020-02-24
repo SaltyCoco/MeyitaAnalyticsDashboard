@@ -1,4 +1,4 @@
-<h1>Healthcare Analysis</h1>
+<h1>Meyita Analytics Dashboard</h1>
 
 <h3>Purpose</h3>
     <p>
@@ -31,5 +31,10 @@
         The majority of calculations were made using python pandas.  Pandas is the standard for this 
         type of dashboard.  
         
+<h2>Dashboards</h2>
+
+    <p>Dashboards are selected by the public.  If you have a topic you would like to see please contact via email, social media or              create a request in this repository</p>
+    
+    <h4>Big Pharma Dashboard</h4>
         
- vpc-f17a3596     
+        <p>This dashboard provides basic info for big pharma companies incorporated within the United States.  Along with basic company          preformance metrics, it also displays employee ratings in various categories.</p>
