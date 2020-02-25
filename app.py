@@ -1,6 +1,6 @@
 # app.py
 
-
+import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import dash
@@ -11,7 +11,8 @@ from dash.dependencies import Input, Output, State
 import flask
 
 server = flask.Flask(__name__)
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=server)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], server=server, suppress_callback_exceptions=True)
+
 
 ########################################################################################################################
 ########################################################################################################################
@@ -1246,23 +1247,7 @@ def pharma_salary_sat():
     ind_salary_sat_data = [jnj_ind_salary_sat_trace, pfe_ind_salary_sat_trace, abbv_ind_salary_sat_trace, bmy_ind_salary_sat_trace, tmo_ind_salary_sat_trace, amgn_ind_salary_sat_trace, gild_ind_salary_sat_trace]
     ind_salary_sat_fig = go.Figure(data=ind_salary_sat_data, layout=ind_salary_sat_layout)
     return ind_salary_sat_fig
-########################################################################################################################
-# Navbar
-########################################################################################################################
-navbar = dbc.Navbar(
-    children=[
-        html.A(
-            dbc.Row(
-                [
-                    dbc.Col(dbc.NavbarBrand("Meyita Analytics", className="ml-2"))
-                ],
-                align="left"
-            )
-        )
-    ],
-    color="dark",
-    dark=True,
-)
+
 ########################################################################################################################
 # Pharma Modals
 ########################################################################################################################
@@ -1754,10 +1739,9 @@ jumbotron_big_pharma = dbc.Jumbotron(
     fluid=True
 )
 ########################################################################################################################
-# Navbar
+# Pharma Layout
 ########################################################################################################################
-app.layout = html.Div(children=[
-    navbar,
+pharma_layout = html.Div(children=[
     jumbotron_big_pharma,
     html.Br(),
     pharma_row_0,
@@ -1787,6 +1771,218 @@ app.layout = html.Div(children=[
     html.Br(),
     html.Br(),
     html.Br(),
+], style={"background-color": "black"})
+
+########################################################################################################################
+########################################################################################################################
+# Flu
+########################################################################################################################
+########################################################################################################################
+
+########################################################################################################################
+# Flu Visuals
+########################################################################################################################
+def flu_map():
+    df_map = pd.read_csv("data/cdc/State_Custom_Data.csv")
+    df_code = pd.read_csv("data/cdc/state_data.csv")
+    df_state_map = pd.merge(df_map, df_code, on='state')
+    df_state_map = df_state_map[df_map["WEEK"] == 52]
+    df_state_map["flu_deaths"] = df_state_map["NUM PNEUMONIA DEATHS"] + df_map["NUM INFLUENZA DEATHS"]
+
+    flu_map_fig = go.Figure(data=go.Choropleth(
+        locations=df_state_map["code"],  # Spatial coordinates
+        z=df_state_map["flu_deaths"],  # Data to be color-coded
+        locationmode='USA-states',  # set of locations match entries in `locations`
+        colorscale='Reds',
+        # range_color=(0, 15000),
+        # autocolorscale=True,
+        colorbar_title="Flu Related Deaths",
+    ))
+    flu_map_fig.update_layout(
+        title_text='2019 Flu Related Deaths',
+        geo_scope='usa',  # limite map scope to USA
+        template="plotly_dark"
+        #paper_bgcolor="red",
+    )
+    return flu_map_fig
+
+def flu_sct_line():
+    df_state = pd.read_csv("data/cdc/State_Custom_Data.csv")
+    df_state['SEASON'] = (df_state['SEASON'].str.split("-").str[0]).astype(int)
+    df_state['SEASON'] = np.where(df_state['WEEK'] < 5, df_state['SEASON'], df_state['SEASON'] + 1)
+    df_state['SEASON'] = df_state['SEASON'].astype(str)
+    df_state['WEEK'] = df_state['WEEK'].astype(str)
+    df_state.loc[df_state['WEEK'].str.contains("1"), 'WEEK'] = "01"
+    df_state.loc[df_state['WEEK'].str.contains("2"), 'WEEK'] = "02"
+    df_state.loc[df_state['WEEK'].str.contains("3"), 'WEEK'] = "03"
+    df_state.loc[df_state['WEEK'].str.contains("4"), 'WEEK'] = "04"
+    df_state['date_id'] = df_state['SEASON'] + df_state['WEEK']
+    df_state = df_state[
+        ['date_id', 'state', 'SEASON', 'WEEK', 'NUM INFLUENZA DEATHS', 'NUM PNEUMONIA DEATHS', 'PERCENT P&I']]
+    df_dates = pd.read_csv("data/cdc/dateTable.csv")
+    df_dates['date_id'] = df_dates['date_id'].astype(str)
+    df_state_data = pd.merge(df_state, df_dates, on='date_id')
+
+    df_state_data.to_csv("data/etl/test.csv")
+
+    df_nat = pd.read_csv("data/cdc/National_Custom_Data.csv")
+    df_nat_flu_test = pd.read_csv("data/cdc/influenza_national_testing.csv")
+
+    typeA = go.Scatter(
+        x=df_nat_flu_test['WeekDate'],
+        y=df_nat_flu_test['Total A'],
+        name="Type A"
+    )
+    typeB = go.Scatter(
+        x=df_nat_flu_test['WeekDate'],
+        y=df_nat_flu_test['Total B'],
+        name="Type B"
+    )
+    typeData = [typeA, typeB]
+    typeLayout = go.Layout(
+        title="Infection Counts Influenza type A & B 2019-2020 Nationally",
+        template='plotly_dark',
+        #paper_bgcolor="red",
+        yaxis=dict(
+            title="Number of People Infected"
+        ),
+        xaxis=dict(
+            title="Date"
+        )
+    )
+    flu_sct_line = go.Figure(data=typeData, layout=typeLayout)
+    return flu_sct_line
+
+########################################################################################################################
+# Flu Jumbotron
+########################################################################################################################
+flu_jumbotron = dbc.Jumbotron([
+    html.H1("Flu Impact"),
+    html.Hr(className="my-1"),
+    html.H3("This dashboard focuses on the impact the flu season has on loss of life within the United States."),
+    html.Hr(className="my-1"),
+])
+
+########################################################################################################################
+# Flu Jumbotron
+########################################################################################################################
+flu_layout = html.Div(children=[
+    html.Br(),
+    html.Br(),
+    flu_jumbotron,
+    html.Br(),
+    html.Br(),
+    dbc.Row([
+        dbc.Col(dcc.Graph(figure=flu_sct_line())),
+        dbc.Col(dcc.Graph(figure=flu_map()))
+    ]),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.H4("This website was developed by and owned by Ryan Schulte"),
+], style={"background-color": "black"})
+
+########################################################################################################################
+########################################################################################################################
+# Index
+########################################################################################################################
+########################################################################################################################
+
+########################################################################################################################
+# Index Jumbotron
+########################################################################################################################
+index_jumbotron = dbc.Jumbotron([
+    html.H1("Meyita Analytics"),
+    html.Hr(className="my-1")
+])
+
+########################################################################################################################
+# Index Jumbotron
+########################################################################################################################
+index_pharma_card = dbc.Card(
+    dbc.CardBody([
+        html.H3("Big Pharma", className="card-title"),
+        html.Hr(className="my-2"),
+        html.P(
+            "This dashboard focuses around large pharmasutical companies which are incorporated within the United States"
+            "For company preformance the dashboard desplays revenue, net income and % of net income to revenue.  This"
+            "helps paint a picture as to how profitable they really are.  Lastly, the dashboard shows employee reported"
+            "ranking for various things.  This allows us to determine how the company treats its own employees."
+        ),
+        dbc.Button("Open", href="/pharma")
+    ])
+)
+
+
+index_flu_card = dbc.Card(
+    dbc.CardBody([
+        html.H3("Flu Seasons", className="card-title"),
+        html.Hr(className="my-2"),
+        html.P(
+            "This dashboard focuses around the impact the flu season has in the united states.  The primary ideas revolve"
+            " around loss of life.  It also allows the user to visualize how the viruses spread by state and by week."
+        ),
+        dbc.Button("Open", href="/flu")
+    ])
+)
+
+index_card_content = html.Div(children=[
+    dbc.Row([
+        dbc.Col(index_pharma_card),
+        dbc.Col(index_flu_card)
+    ])
+])
+
+
+########################################################################################################################
+# Index Layout
+########################################################################################################################
+index_page = html.Div(children=[
+    html.Br(),
+    html.Br(),
+    index_jumbotron,
+    html.Br(),
+    html.Br(),
+    index_card_content,
+    html.Br(),
+    html.Br(),
+    html.H4("This website was developed by and owned by Ryan Schulte"),
+], style={"background-color": "black"})
+
+########################################################################################################################
+########################################################################################################################
+# App Layout
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+# Navbar
+########################################################################################################################
+navbar = dbc.Navbar(children=[
+        html.A(
+            dbc.Row([
+                    dbc.Col(dbc.NavbarBrand("Meyita Analytics", className="ml-2", href="/"))
+                ],
+                align="left"
+            )
+        ),
+    dbc.NavItem(dbc.NavLink("Big Pharma", href="/pharma", style={"color": "white", "float": "right"})),
+    dbc.NavItem(dbc.NavLink("Flu", href="/flu", style={"color": "white", "float": "right"}))
+    ],
+    color="dark",
+    dark=True,
+    fixed="top"
+)
+
+
+app.layout = html.Div(children=[
+    dcc.Location(id='url', refresh=False),
+    navbar,
+    html.Div(id="page_content")
 ], style={"background-color": "black"})
 
 ########################################################################################################################
@@ -1874,6 +2070,20 @@ def toggle_modal(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
+
+############################################################################
+# Update the index
+############################################################################
+@app.callback(dash.dependencies.Output('page_content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/pharma':
+        return pharma_layout
+    elif pathname == '/flu':
+         return flu_layout
+    else:
+        return index_page
+    # You could also return a 404 "URL not found" page here
 
 ########################################################################################################################
 # Application
