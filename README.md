@@ -1,4 +1,4 @@
-<h1>Healthcare Analysis</h1>
+<h1>Meyita Analytics Dashboard</h1>
 
 <h3>Purpose</h3>
     <p>
@@ -10,7 +10,7 @@
         going to forgo adding my opinion or bias and just present facts.  I am not a democrat or republican and have 
         true disbain for both political parties.  Questions, concerns and comments are always welcome.  All data gathered 
         for this dashboard will be available in it's raw format with references to where I got it from.  Lastly, if
-        anybody has problems with anything presented please email said concern to gofuck@yourself.com
+        anybody has problems with anything presented please email said concern to ryan.j.schulte@gmail.com.
     </p>
     
 <h3>Web Application</h3>
@@ -31,5 +31,10 @@
         The majority of calculations were made using python pandas.  Pandas is the standard for this 
         type of dashboard.  
         
+<h2>Dashboards</h2>
+
+<p>Dashboards are selected by the public.  If you have a topic you would like to see please contact via email, social media or              create a request in this repository</p>
+    
+<h4>Big Pharma Dashboard</h4>
         
- vpc-f17a3596     
+    This dashboard provides basic info for big pharma companies incorporated within the United States.  Along with basic company          preformance metrics, it also displays employee ratings in various categories.</p>
