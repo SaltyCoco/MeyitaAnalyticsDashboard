@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63af1507-08f5-416e-a2f0-1f9829c90671" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/covid19/20200314-sitrep-54-covid-19.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro-1.4.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/distro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/errors/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/file_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/tabula-1.0.3-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/tabula_py-2.1.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visuals/flu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visuals/visMaker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visuals/net_income_test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visuals/pct_test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visuals/revenue_test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visuals/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/visuals/scratch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visuals/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +156,8 @@
       <workItem from="1582501012533" duration="5917000" />
       <workItem from="1582590238588" duration="5947000" />
       <workItem from="1582603135296" duration="2484000" />
-      <workItem from="1584248379738" duration="12354000" />
+      <workItem from="1584248379738" duration="13234000" />
+      <workItem from="1584477663656" duration="2584000" />
     </task>
     <servers />
   </component>
@@ -210,7 +182,7 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="505" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.821@0.23.1440.821" timestamp="1584423905424" />
-    <state width="1186" height="645" key="GridCell.Tab.0.bottom" timestamp="1584426148407">
+    <state width="1186" height="368" key="GridCell.Tab.0.bottom" timestamp="1584495812071">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="374" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582442265752" />
@@ -219,12 +191,12 @@
     <state width="1046" height="349" key="GridCell.Tab.0.bottom/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
     <state width="759" height="322" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1582485869172" />
     <state width="1186" height="645" key="GridCell.Tab.0.bottom/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1584412190803" />
-    <state width="1186" height="645" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584426148407" />
+    <state width="1186" height="368" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584495812071" />
     <state width="1186" height="272" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1584412026935" />
-    <state width="1186" height="645" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1584425394493" />
+    <state width="1186" height="645" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1584494286101" />
     <state width="1235" height="260" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1582600396023" />
     <state width="1235" height="323" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1582595749847" />
-    <state width="1186" height="645" key="GridCell.Tab.0.center" timestamp="1584426148407">
+    <state width="1186" height="368" key="GridCell.Tab.0.center" timestamp="1584495812071">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="374" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582442265750" />
@@ -233,12 +205,12 @@
     <state width="1046" height="349" key="GridCell.Tab.0.center/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
     <state width="759" height="322" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1582485869171" />
     <state width="1186" height="645" key="GridCell.Tab.0.center/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1584412190802" />
-    <state width="1186" height="645" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1584426148407" />
+    <state width="1186" height="368" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1584495812071" />
     <state width="1186" height="272" key="GridCell.Tab.0.center/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1584412026934" />
-    <state width="1186" height="645" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1584425394493" />
+    <state width="1186" height="645" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1584494286099" />
     <state width="1235" height="260" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1582600396022" />
     <state width="1235" height="323" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1582595749847" />
-    <state width="1186" height="645" key="GridCell.Tab.0.left" timestamp="1584426148406">
+    <state width="1186" height="368" key="GridCell.Tab.0.left" timestamp="1584495812070">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="374" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582442265748" />
@@ -247,12 +219,12 @@
     <state width="1046" height="349" key="GridCell.Tab.0.left/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138756" />
     <state width="759" height="322" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1582485869170" />
     <state width="1186" height="645" key="GridCell.Tab.0.left/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1584412190801" />
-    <state width="1186" height="645" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1584426148406" />
+    <state width="1186" height="368" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1584495812070" />
     <state width="1186" height="272" key="GridCell.Tab.0.left/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1584412026933" />
-    <state width="1186" height="645" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1584425394492" />
+    <state width="1186" height="645" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1584494286099" />
     <state width="1235" height="260" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1582600396022" />
     <state width="1235" height="323" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1582595749846" />
-    <state width="1186" height="645" key="GridCell.Tab.0.right" timestamp="1584426148407">
+    <state width="1186" height="368" key="GridCell.Tab.0.right" timestamp="1584495812071">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="374" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1582442265751" />
@@ -261,23 +233,23 @@
     <state width="1046" height="349" key="GridCell.Tab.0.right/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1582425138757" />
     <state width="759" height="322" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1582485869171" />
     <state width="1186" height="645" key="GridCell.Tab.0.right/0.23.1440.821/-1920.23.1920.1057@0.23.1440.821" timestamp="1584412190802" />
-    <state width="1186" height="645" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1584426148407" />
+    <state width="1186" height="368" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1584495812071" />
     <state width="1186" height="272" key="GridCell.Tab.0.right/0.23.1440.822/-1920.23.1920.1057@0.23.1440.822" timestamp="1584412026935" />
-    <state width="1186" height="645" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1584425394493" />
+    <state width="1186" height="645" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1584494286100" />
     <state width="1235" height="260" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1582600396023" />
     <state width="1235" height="323" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1582595749847" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582603321409">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1584426948533">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582490010420" />
     <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1582442869538" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1582506214433" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1584426948533" />
     <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1582603321409" />
     <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1582489328526" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_pharma_in_rev_py.coverage" NAME="visuals.pharma_in_rev.py Coverage Results" MODIFIED="1582425030150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
-    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$MeyitaAnalyticsDashboards.coverage" NAME="MeyitaAnalyticsDashboards Coverage Results" MODIFIED="1584426148398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$MeyitaAnalyticsDashboards.coverage" NAME="MeyitaAnalyticsDashboards Coverage Results" MODIFIED="1584495812060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MeyitaAnalyticsDashboards$visuals_scratch_py.coverage" NAME="visuals/scratch.py Coverage Results" MODIFIED="1584423710136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visuals" />
   </component>
 </project>

@@ -1986,9 +1986,11 @@ def influenza_deaths():
 # Flu Jumbotron
 ########################################################################################################################
 flu_jumbotron = dbc.Jumbotron([
-    html.H1("Flu Impact"),
+    html.H1("Virus Impacts"),
     html.Hr(className="my-1"),
-    html.H3("This dashboard focuses on the impact the flu season has on loss of life within the United States."),
+    html.H3("This dashboard focuses on the impact viruses have the United States.  "
+            "This dashboard currently analyzes influenza, phenomena and COVID-19. "
+            "The dashboard for COVID-19 is from Johns Hopkins University"),
     html.Hr(className="my-1"),
 ])
 
@@ -2015,10 +2017,17 @@ flu_layout = html.Div(children=[
     html.Br(),
     html.Br(),
     html.Br(),
+    dbc.Row(
+    html.Div(children=[
+        html.H5("The below Dashboard is owened, operated and created by Johns Hopkins Center for Systems Scirnce and Engineering", style={"color":"white"}),
+        html.Iframe(src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", height="800", width="1400"),
+        ], style={"margin-left":"2%", "margin-right":"2%"}),
+    ),
     html.Br(),
     html.Br(),
     html.H4("This website was developed by and owned by Ryan Schulte"),
 ], style={"background-color": "black"})
+
 
 ########################################################################################################################
 ########################################################################################################################
@@ -2054,10 +2063,10 @@ index_pharma_card = dbc.Card(
 
 index_flu_card = dbc.Card(
     dbc.CardBody([
-        html.H3("Flu Seasons", className="card-title"),
+        html.H3("Viruses", className="card-title"),
         html.Hr(className="my-2"),
         html.P(
-            "This dashboard focuses around the impact the flu season has in the united states.  The primary ideas revolve"
+            "This dashboard focuses around the impact viruses in the united states.  The primary ideas revolve"
             " around loss of life.  It also allows the user to visualize how the viruses spread by state and by week."
         ),
         dbc.Button("Open", href="/flu")
@@ -2104,8 +2113,8 @@ navbar = dbc.Navbar(children=[
             )
         ),
     dbc.NavItem(dbc.NavLink("Big Pharma", href="/pharma", style={"color": "white", "float": "right"})),
-    dbc.NavItem(dbc.NavLink("Flu", href="/flu", style={"color": "white", "float": "right"}))
-    ],
+    dbc.NavItem(dbc.NavLink("Viruses", href="/flu", style={"color": "white", "float": "right"})),
+],
     color="dark",
     dark=True,
     fixed="top"
